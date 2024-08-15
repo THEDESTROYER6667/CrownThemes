@@ -1,4 +1,4 @@
-let DefaultTheme = {
+{
   GUI: {
     BackgroundColor: "grey",
     TextColor: "white",
