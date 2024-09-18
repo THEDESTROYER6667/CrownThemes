@@ -295,13 +295,17 @@
         }
 
 
-        .FeederBtn input {
+        .FeederTextBox {
             background-color: #777;
             color: white;
             border: none;
             padding: 10px;
             border-radius: 5px;
             width: 150px;
+        }
+
+        .FeederTextBox::placeholder {
+            color: white;
         }
 
 
@@ -341,6 +345,8 @@
         }
     </style>
     <script>
+        let CustomFeederColor = window.opener.JSON.parse(localStorage.getItem("FeederTheme"));
+
         function Alert(InnerText, Seconds) {
             let ExistingMessage = window.opener.document.getElementById("CrwnMessage");
 
